@@ -7,9 +7,9 @@ class ColorCoefficients:
             "Красный": 1.0,
             "Перламутровый": 1.2,
             "Серый металлик": 1.3,
-            "Зеленый": 1.1,
             "Черный": 1.15,
+            "Зеленый": 1.1,
         }
 
     def get(self, color):
-        return self.coefficients[color]
+        return self.coefficients[color.strip().capitalize()]

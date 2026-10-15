@@ -10,4 +10,4 @@ class PartCoefficients:
         }
 
     def get(self, part):
-        return self.coefficients[part]
+        return self.coefficients[part.strip().capitalize()]
