@@ -10,4 +10,4 @@ class CarCalculator:
         self.parts = PartCoefficients()
 
     def calc(self, part, color):
-        return self.BASE_PRICE * self.parts.get(part) * self.colors.get(color)
+        return round(self.BASE_PRICE * self.parts.get(part) * self.colors.get(color))
